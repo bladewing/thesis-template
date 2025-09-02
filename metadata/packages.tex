@@ -1,0 +1,128 @@
+% !TEX root = ../Grunddatei.tex
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{pdfpages}
+\usepackage[paper=a4paper,left=25mm,right=25mm,top=25mm,bottom=25mm]{geometry}
+% !TEX root = ../Grunddatei.tex
+
+% ---------------------------
+% Core packages
+% ---------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+
+% ---------------------------
+% Fonts & language (LuaLaTeX/XeLaTeX)
+% ---------------------------
+\usepackage{fontspec} % For proper font handling with lualatex
+% \setmainfont{OpenSans} % Comment out if OpenSans is not installed
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\setotherlanguage{german}
+% \setotherlanguage{latin} % Removed - only needed for lorem ipsum
+\usepackage{hyphenat}
+\usepackage{microtype} % Improve text appearance with better spacing and kerning
+
+% ---------------------------
+% Page layout & headers
+% ---------------------------
+\usepackage[paper=a4paper,left=25mm,right=25mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{pdfpages}
+\usepackage[
+    automark, % Kapitelangaben in Kopfzeile automatisch erstellen
+    headsepline, % Trennlinie unter Kopfzeile
+    ilines % Trennlinie linksbündig ausrichten
+]{scrlayer-scrpage}
+\setlength{\headsep}{30pt} % Abstand Kopfzeile Textkörper
+
+% ---------------------------
+% Links, URLs and cross-references
+% ---------------------------
+\PassOptionsToPackage{hyphens}{url}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=blue, citecolor=black]{hyperref}
+\usepackage{url}
+\usepackage{cleveref}
+
+% ---------------------------
+% Graphics & figures
+% ---------------------------
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{pdflscape}
+
+% ---------------------------
+% Tables & plots
+% ---------------------------
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{colortbl}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
+
+% ---------------------------
+% Algorithms
+% ---------------------------
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+% ---------------------------
+% Code listings & minted
+% ---------------------------
+\usepackage{listings}
+\lstset{
+    basicstyle=\scriptsize\ttfamily,    % Default font
+    numbers=left,                         % Location of line numbers
+    numberstyle=\tiny,                   % Style of line numbers
+    numbersep=5pt,                        % Margin between line numbers and text
+    tabsize=2,                            % Size of tabs
+    extendedchars=true,
+    breaklines=true,                      % Lines will be wrapped
+    keywordstyle=\color{red},
+    frame=single,
+    stringstyle=\color{white}\ttfamily, % Color of strings
+    showspaces=false,
+    showtabs=false,
+    xleftmargin=17pt,
+    showstringspaces=false,
+    numberbychapter=true
+}
+\usepackage{minted} % requires -shell-escape when compiling
+
+% ---------------------------
+% Misc utilities
+% ---------------------------
+\usepackage[super]{nth}
+\usepackage{adjustbox}
+\usepackage[inline]{enumitem}
+\usepackage{lmodern}
+\usepackage{lipsum}
+
+% ---------------------------
+% Bibliography
+% ---------------------------
+\usepackage{csquotes}
+\usepackage[backend=biber,style=trad-abbrv,sortcites=true]{biblatex}
+\addbibresource{literature.bib}
+
+% ---------------------------
+% Acronyms / Glossary
+% ---------------------------
+\usepackage[printonlyused]{acronym}
+\usepackage[nopostdot]{glossaries}
+\makeglossaries
+
+% ---------------------------
+% Counters, footnotes
+% ---------------------------
+%\usepackage{chngcntr}
+%\counterwithin{figure}{section}
+%\usepackage[perpage]{footmisc}
+
+% End of packages

@@ -1,0 +1,104 @@
+ \documentclass[
+   12pt, % Schriftgröße
+   DIV=calc,
+   english, % für Umlaute, Silbentrennung etc.
+   a4paper, % Papierformat
+   oneside, % einseitiges Dokument
+   titlepage, % es wird eine Titelseite verwendet
+   parskip=half, % Abstand zwischen Absätzen (halbe Zeile)
+%   headings=normal, % Grˆﬂe der Überschriften verkleinern
+   listof=totoc, % Verzeichnisse im Inhaltsverzeichnis aufführen
+   bibliography=totoc, % Literaturverzeichnis im Inhaltsverzeichnis aufführen
+   index=totoc, % Index im Inhaltsverzeichnis aufführen
+%   captions=nooneline, % Beschriftung von Tabellen unterhalb ausgeben
+   final, % Status des Dokuments (final/draft)
+   numbers=noenddot
+]{scrartcl}
+
+
+% All packages are now loaded via metadata/packages.tex
+
+
+\input{metadata/meta.tex} %Informationen über das Dokument
+
+\input{metadata/packages.tex} %benötigte Packages
+
+
+%\input{Metadata/Page_Style} %Kopf- und Fußzeilen, Seitenränder..
+
+%Hier beginnt das eigentliche Dokument
+\begin{document}
+
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+\pagenumbering{gobble}
+\include{metadata/cover_page} %Deckblatt
+
+\include{content/abstract} %Falls ein Abstract eingefügt werden soll
+
+\include{content/acknowledgements} %Danksagung
+
+\pagenumbering{gobble}
+
+\tableofcontents %Inhaltsverzeichnis
+
+\newpage
+\pagenumbering{Roman}
+\listoffigures % Abbildungsverzeichnis
+
+\newpage
+\listoftables
+%
+\newpage
+\lstlistoflistings
+
+\include{metadata/acronyms} %Abkürzungsverzeichnis
+
+\include{metadata/glossary}
+\clearpage
+
+% 1.5-fachen Zeilenabstand
+%\onehalfspacing
+
+% Text includes
+\pagenumbering{arabic}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   Inhalt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\input{sections/01_introduction}
+\input{sections/02_examples}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+\newpage
+\pagenumbering{gobble}
+\printbibliography
+
+
+
+
+
+%% Selbständigkeitserklärung
+\include{metadata/declaration} %Erklaerung.tex
+
+%% Anhang 
+\clearpage
+\markboth{Appendices}{} % Set header to display "Appendices" in the top-left
+\appendix
+\clearpage
+\pagenumbering{arabic}
+% Appendix pages: A1, A2, ...
+\setcounter{page}{1}
+\renewcommand{\thepage}{A-\arabic{page}}
+\input{appendix/01_dummy.tex}
+
+
+% Ende des Dokuments
+\end{document}
+%------------------------------------------

@@ -1,0 +1,158 @@
+THESIS TEMPLATE CHECKLIST
+=========================
+
+Before submitting your thesis, ensure you have completed all the following steps:
+
+METADATA CONFIGURATION (metadata/meta.tex)
+-------------------------------------------
+[ ] Author name filled in
+[ ] Thesis title entered
+[ ] Document type specified (Bachelor's/Master's/PhD)
+[ ] Field of study specified
+[ ] University name filled in
+[ ] Faculty/Department name added
+[ ] University location specified
+[ ] First supervisor name entered
+[ ] Second supervisor name entered (if applicable)
+[ ] Submission date set
+[ ] Year updated
+[ ] Semester specified
+
+CONTENT SECTIONS
+----------------
+[ ] Abstract written (content/abstract.tex)
+    [ ] 150-300 words
+    [ ] Key findings summarized
+    [ ] Research contribution stated
+    
+[ ] Acknowledgements personalized (content/acknowledgements.tex) - optional
+
+[ ] Introduction completed (sections/01_introduction.tex)
+    [ ] Context and motivation provided
+    [ ] Problem statement clearly defined
+    [ ] Research objectives listed
+    [ ] Research questions formulated
+    [ ] Scope defined
+    [ ] Thesis structure described
+
+[ ] Main thesis content added
+    [ ] All placeholder Lorem ipsum text removed
+    [ ] Research methodology described
+    [ ] Results presented with appropriate figures/tables
+    [ ] Discussion of findings included
+    [ ] Conclusions drawn
+
+[ ] Examples section reviewed (sections/02_examples.tex)
+    [ ] Relevant examples kept and adapted
+    [ ] Unused examples removed
+    [ ] Examples integrated into main content where appropriate
+    [ ] Section removed befor submission
+
+BIBLIOGRAPHY (literature.bib)
+-----------------------------
+[ ] All placeholder citations replaced with actual references
+[ ] Bibliography entries complete and accurate
+[ ] All citations in text have corresponding bibliography entries
+[ ] Citation style consistent throughout
+[ ] Bibliography compiles without errors
+
+IMAGES AND FIGURES
+------------------
+[ ] Logo updated (content/images/logo.jpg)
+[ ] All placeholder images replaced
+[ ] Figure captions descriptive and complete
+[ ] All figures referenced in text
+[ ] Image quality sufficient for printing
+
+TABLES
+------
+[ ] All tables have descriptive captions
+[ ] Tables properly formatted with booktabs
+[ ] All tables referenced in text
+[ ] Table data accurate and sourced
+
+CODE LISTINGS
+-------------
+[ ] Code examples relevant to thesis topic
+[ ] Syntax highlighting working (minted package)
+[ ] Code properly formatted and readable
+[ ] External code files included where appropriate
+
+MATHEMATICAL CONTENT
+--------------------
+[ ] All equations properly formatted
+[ ] Equation numbering consistent
+[ ] Important equations labeled and referenced
+[ ] Mathematical notation explained
+
+ACRONYMS AND GLOSSARY
+---------------------
+[ ] Acronyms list updated (metadata/acronyms.tex)
+    [ ] All acronyms used in text defined
+    [ ] Unused default acronyms removed
+[ ] Glossary completed (metadata/glossary.tex) - if used
+    [ ] Technical terms defined
+    [ ] Consistent with text usage
+
+APPENDICES
+----------
+[ ] Appendix content added (appendix/01_dummy.tex)
+[ ] Additional appendices created as needed
+[ ] Supplementary data included
+[ ] Large tables/figures moved to appendix if appropriate
+
+FORMATTING CHECKS
+-----------------
+[ ] Page numbers correct and continuous
+[ ] Table of contents accurate
+[ ] List of figures complete
+[ ] List of tables complete
+[ ] List of listings complete (if used)
+[ ] Consistent formatting throughout
+[ ] Headers and footers correct
+[ ] Margins meet requirements
+
+COMPILATION
+-----------
+[ ] Document compiles with XeLaTeX/LuaLaTeX
+[ ] No compilation errors
+[ ] Warnings reviewed and addressed where necessary
+[ ] Bibliography processed correctly with biber
+[ ] All cross-references resolved (compile twice)
+[ ] PDF hyperlinks working
+
+LANGUAGE AND STYLE
+------------------
+[ ] Spell check completed
+[ ] Grammar check completed
+[ ] Writing style appropriate for academic work
+[ ] Consistent terminology throughout
+[ ] Abbreviations defined on first use
+[ ] Active/passive voice used appropriately
+
+FINAL CHECKS
+------------
+[ ] Declaration signed (metadata/declaration.tex)
+[ ] Cover page information complete (metadata/cover_page.tex)
+[ ] Supervisor feedback incorporated
+[ ] University formatting guidelines followed
+[ ] PDF metadata correct
+[ ] File size acceptable for submission
+
+SUBMISSION PREPARATION
+----------------------
+[ ] Final PDF generated with all fonts embedded
+[ ] File naming follows university guidelines
+[ ] Digital submission requirements met
+[ ] Print copies prepared if required
+[ ] Additional required documents prepared
+[ ] Submission deadline confirmed
+[ ] Backup copies created
+
+LATEX-SPECIFIC CHECKS
+---------------------
+[ ] All packages in metadata/packages.tex necessary
+[ ] No package conflicts
+[ ] Custom commands documented if used
+[ ] Bibliography style appropriate for field
+[ ] Document class settings appropriate

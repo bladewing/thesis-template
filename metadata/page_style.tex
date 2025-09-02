@@ -1,0 +1,30 @@
+% !TEX root = Grunddatei.tex
+
+% Times Roman Schriftart
+\setkomafont{disposition}{\normalcolor\bfseries}
+
+% Zeilenabstand 1,5 Zeilen
+\onehalfspacing
+
+\pagestyle{scrheadings} %Kopf- und Fuﬂzeilen
+
+\renewcommand{\headfont}{\normalfont} %Schriftform der Kopfzeile
+
+\setlength{\headheight}{10mm} % Höhe der Kopfzeile
+\setlength{\footheight}{15mm} % Höhe der Fußzeile
+\setlength{\textheight}{0.95\textheight}
+
+% Kopfzeile
+\ihead{\textit{\headmark}}
+\chead{}
+\ohead{\includegraphics[height=18pt]{\logo}}
+
+
+%\setheadwidth[0pt]{textwithmarginpar} %Kopfzeile über den Text hinaus verbreitern
+
+%\setheadsepline[text]{0.4pt} % Trennlinie unter Kopfzeile
+
+% Fußzeile
+\ifoot{}
+\cfoot{}
+\ofoot{\thepage}

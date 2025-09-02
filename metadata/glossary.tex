@@ -1,0 +1,37 @@
+% !TEX root = Grunddatei.tex
+\addsec{Glossary}
+
+% Boldface term names in the glossary
+\defglsentryfmt[acronym]{\textbf{\glsgenacfmt}}
+\defglsentryfmt[main]{\textbf{\glsgenentryfmt}}
+
+% How to use in text:
+%  - \gls{label} for lowercase form (first use prints full form for acronyms)
+%  - \Gls{label} capitalizes the first letter
+%  - \glspl{label} / \Glspl{label} for plurals (when plural is provided)
+
+% Example glossary entries
+\newglossaryentry{AES}{
+    name=Advanced Encryption Standard,
+    description={A widely used encryption algorithm for securing data}
+}
+
+\newglossaryentry{dataset}{
+    name=dataset,
+    plural=datasets,
+    description={A collection of data used for training, validating, or testing models}
+}
+
+\newglossaryentry{latency}{
+    name=latency,
+    description={The time delay between a request and the corresponding response}
+}
+
+\newglossaryentry{throughput}{
+    name=throughput,
+    description={The rate at which a system processes work or data over time}
+}
+
+% Hide the default section title inserted by glossaries and print the list
+\renewcommand{\glossarysection}[2][]{}
+\printglossary[style=altlist]
